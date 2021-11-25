@@ -1,0 +1,70 @@
+// Ava
+.img-frame, 
+.ava-frame {
+  display: inline-block;
+}
+
+.ava {
+	font-size: 0;
+	display: block;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.ava[aria-label]::after {
+	position: absolute;
+	inset: 0;
+
+	content: attr(aria-label);
+	color: currentColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: var(--fs);
+	font-weight: 500;
+	background-color: var(--bg);
+	pointer-events: none;
+}
+
+.ava:not([src])::before,
+.ava:is(:-moz-broken)::before {
+	content: none !important;
+}
+
+//OPTION: if var(--bg) not support / style attr not set with JS
+// .ava[aria-label]:not([style])::after {
+// 	font-size: .875rem;
+// 	background-color: #55595c;
+// }
+
+.ava-loader, 
+.ava-loader:not(.ava)::before {
+	content: "\00a0";
+  background: #fff linear-gradient(to right, rgba(0,0,0,.08) 0, rgba(0,0,0,.15) 15%, rgba(0,0,0,.08) 30%);
+  background-size: 1200px 100%;
+  animation: lightAnim 2s linear;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes lightAnim {
+	0%{
+		background-position: -1200px 0;
+	}
+	100%{
+		background-position: 1200px 0;
+	}
+}
+@keyframes lightAnim {
+	0%{
+		background-position:-1200px 0;
+	}
+	100%{
+		background-position:1200px 0;
+	}
+}
+
+
+
+

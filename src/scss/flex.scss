@@ -1,0 +1,28 @@
+.d-flex {
+  display: flex !important;
+}
+
+.flexno {
+  flex: none !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
+.a-items-center {
+  align-items: center !important;
+}
+
+.a-self-baseline {
+  align-self: baseline !important;
+}
+
+// .a-self-end {
+//   align-self: flex-end !important;
+// }
+
+.jc-center {
+  justify-content: center !important;
+}
+

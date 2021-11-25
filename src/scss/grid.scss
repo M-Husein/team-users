@@ -1,0 +1,95 @@
+.row {
+  --q-gutter-x: 1.5rem;
+  --q-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--q-gutter-y));
+  margin-right: calc(-0.5 * var(--q-gutter-x));
+  margin-left: calc(-0.5 * var(--q-gutter-x));
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--q-gutter-x) * 0.5);
+  padding-left: calc(var(--q-gutter-x) * 0.5);
+  margin-top: var(--q-gutter-y);
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.row-cols-1 > * {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.g-4,
+.gx-4 {
+  --q-gutter-x: 1.5rem;
+}
+
+.g-4,
+.gy-4 {
+  --q-gutter-y: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .row-cols-md-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-cols-lg-2 > * {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl {
+    flex: 1 0 0%;
+  }
+
+  .row-cols-xl-3 > * {
+    flex: 0 0 auto;
+    width: 33.3333333333%;
+  }
+
+}
+
+/* FOR Tablet Portrait */
+@media (max-width: 991px) and (min-width: 768px){
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-md-9 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}

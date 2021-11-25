@@ -1,0 +1,22 @@
+@import './scss/var-root.scss';
+@import './scss/css-reset.scss';
+@import './scss/containers.scss';
+@import './scss/grid.scss';
+@import './scss/img.scss';
+@import './scss/ava.scss';
+@import './scss/btn.scss';
+@import './scss/input.scss';
+@import './scss/placeholder.scss';
+@import './scss/card.scss';
+@import './scss/list.scss';
+@import './scss/alert.scss';
+
+// Partials component
+@import './scss/components/navmain.scss';
+@import './scss/components/card-user.scss';
+
+// Helpers / Utilities
+@import './scss/helpers.scss';
+
+// Responsive
+@import './scss/responsive/smartphone-landscape-portrait.scss';

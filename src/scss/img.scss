@@ -1,0 +1,40 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumb {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-frame, 
+.ava {
+  position: relative;
+}
+
+.img-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.img-frame, // OPTION
+.img-frame img {
+  user-select: none;
+}
+
+// OPTION: children in <Img /> component
+// .img-frame img + * {
+//   position: relative;
+//   z-index: 2;
+// }
+
