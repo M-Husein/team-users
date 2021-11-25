@@ -1,8 +1,9 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import NavMain from './parts/NavMain';
 import SplashSpin from './components/SplashSpin';
+import RouteLazy from './components/RouteLazy';
+import NavMain from './parts/NavMain';
 import AsideMain from './parts/AsideMain';
 import Page404 from './pages/Page404';
 
@@ -33,8 +34,8 @@ export default function App() {
           <main className="col-md-9">
             <Suspense fallback={<SplashSpin />}>
               <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/user/:id" component={UserDetail} />
+                <RouteLazy exact path="/" component={Home} />
+                <RouteLazy path="/user/:id" component={UserDetail} />
                 <Route path="*" component={Page404} />
               </Switch>
             </Suspense>
