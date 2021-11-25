@@ -83,10 +83,10 @@ const Ava = forwardRef<HTMLImageElement, AvaProps>(
 		return;
 	}
 
-	const ElWrap = WrapAs as React.ElementType;
+	const Wrap = WrapAs as React.ElementType;
 
 	return (
-		<ElWrap 
+		<Wrap 
 			{...wrapProps} 
 			className={
 				Cx("img-frame ava-frame", {
@@ -113,7 +113,7 @@ const Ava = forwardRef<HTMLImageElement, AvaProps>(
 				onError={Err}
 				onLoad={Load} 
 			/>
-		</ElWrap>
+		</Wrap>
 	);
 });
 

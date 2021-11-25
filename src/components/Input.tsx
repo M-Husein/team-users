@@ -5,7 +5,6 @@ type InputProps = {
   prefixClass?: string, 
   type?: string, 
   className?: string |  undefined, 
-  
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(

@@ -1,3 +1,11 @@
+# Team Users
+
+1. Download / clone source code.
+2. install dependencies with CLI in root folder, type **npm install** and Enter.
+3. See instructions below to run App.
+
+#
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,5 +1,3 @@
-// import { SyntheticEvent } from 'react';
-
 import Btn from '../components/Btn';
 
 type NavMainProps = {
@@ -11,10 +9,7 @@ export default function NavMain({
   openAside, 
   onOpenAside
 }: NavMainProps){
-  const onClickBtn = () => { // e: SyntheticEvent
-    /* @ts-ignore */
-    // document.activeElement.blur();
-    // e.target.blur();
+  const onClickBtn = () => {
     onOpenAside && onOpenAside();
   }
 

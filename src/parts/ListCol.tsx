@@ -1,13 +1,8 @@
-// export interface ListColProps {
-//   label?: string, 
-//   value?: any
-// }
-
 type ListColProps = {
   label?: string,
   value?: any,
-  labelSize?: number, 
-  valueSize?: number
+  labelSize?: number | string, 
+  valueSize?: number | string
 };
 
 export default function ListCol({

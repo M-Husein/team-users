@@ -25,7 +25,7 @@ export default function request(url, {
 
       let contentType = res.headers.get('content-type');
       if (!contentType || !contentType.includes('/' + responseType)) {
-        reject(new TypeError("responseType not " + responseType));// throw 
+        reject(new TypeError("responseType not " + responseType));
         return;
       }
       return res[responseType]();
