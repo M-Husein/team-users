@@ -1,8 +1,8 @@
 # Team Users
 
-1. Download / clone source code.
+1. Clone or download source code.
 2. install dependencies with CLI in root folder, type **npm install** and Enter.
-3. See instructions below to run App.
+3. See instructions below to run the App.
 
 #
 

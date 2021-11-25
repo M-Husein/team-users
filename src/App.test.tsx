@@ -4,8 +4,6 @@ import App from './App';
 
 test('renders App', () => {
   render(<App />);
-  // const linkElement = screen.getByText(/Detail/i);
-  // expect(linkElement).toBeInTheDocument();
 
   const navMain = screen.getByTestId('navMain');
   expect(navMain).toBeInTheDocument();
